@@ -1,7 +1,6 @@
 .container {
-  width: 525px;
-
-  height: 529px;
+ max-width: 525px; /* Change width to max-width */
+  max-height: 529px; /* Change height to max-height */
  margin:auto;
  margin-top: 2rem;
  margin-bottom:auto;
@@ -12,8 +11,10 @@
 @media screen and (max-width: 768px) {
   .container {
     max-width: 100%; /* Adjust the maximum width for smaller screens */
+    max-height: auto; /* Allow height to adjust automatically */
     padding: 0 20px; /* Add padding for better spacing on smaller screens */
-  }}
+  }
+}
 .top-bar{
   display: flex;
   justify-content: center;
